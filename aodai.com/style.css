@@ -282,6 +282,180 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
+/* Áo Dài Guide */
+.aodai-guide {
+  padding: 8rem 5%;
+  background: var(--cream);
+}
+
+.guide-header {
+  max-width: 900px;
+  margin: 0 auto 6rem;
+  text-align: center;
+}
+
+.guide-header h2 {
+  font-size: 3.5rem;
+  color: var(--soft-black);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.guide-intro {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.guide-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guide-section {
+  margin-bottom: 6rem;
+}
+
+.guide-section.full-width {
+  max-width: 100%;
+}
+
+.guide-section h3 {
+  font-size: 2.5rem;
+  color: var(--soft-black);
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.guide-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.guide-text p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.guide-text strong {
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
+/* Regional Variations */
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+.region-card {
+  background: white;
+  border-radius: 2px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.region-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  border-left-color: var(--crimson);
+}
+
+.region-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.region-header h4 {
+  font-size: 1.8rem;
+  color: var(--soft-black);
+  margin-bottom: 0.3rem;
+  font-weight: 400;
+}
+
+.region-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.region-details p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.region-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feature-tag {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  background: var(--cream);
+  color: var(--charcoal);
+  font-size: 0.75rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+}
+
+/* Design Elements */
+.elements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.element-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 2px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.element-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.element-card h4 {
+  font-size: 1.4rem;
+  color: var(--crimson);
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.element-card p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.element-card strong {
+  color: var(--charcoal);
+  font-weight: 500;
+}
+
 /* Section Headers */
 .section-header-inline {
   display: flex;
@@ -787,5 +961,9 @@ footer {
   .manifesto-quote {
     font-size: 1.6rem;
     padding-left: 2rem;
+  }
+  
+  .elements-grid {
+    grid-template-columns: 1fr;
   }
 }
